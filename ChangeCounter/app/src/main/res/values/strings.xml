@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">ChangeCounter</string>
+    <string-array name="coin_types">
+        <item>1p-Head</item>
+        <item>1p-Tails</item>
+        <item>2p-Head</item>
+        <item>2p-Tails</item>
+        <item>5p-Head</item>
+        <item>5p-Tails</item>
+        <item>10p-Head</item>
+        <item>10p-Tails</item>
+        <item>20p-Head</item>
+        <item>20p-Tails</item>
+        <item>50p-Head</item>
+        <item>50p-Tails</item>
+        <item>1pound-Head</item>
+        <item>1pound-Tails</item>
+        <item>2pound-Head</item>
+        <item>2pound-Tails</item>
+    </string-array>
+    <string name="progress_grayscale">Grayscaleing the image</string>
+    <string name="progress_blur">Blurring the image</string>
+    <string name="progress_thresh">Threshing the image</string>
+    <string name="progress_opening">Performing some opening on the image</string>
+    <string name="progress_closing">Performing some closing on the image</string>
+    <string name="progress_outline">Creating a outline of the image</string>
+    <string name="progress_outlineThick">Thickening the outline</string>
+    <string name="progress_houghCircle">Running Hough Cirlce</string>
+
+
+</resources>

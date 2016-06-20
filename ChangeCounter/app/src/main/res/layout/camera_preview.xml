@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0" >
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:id="@+id/cameraControlFrame">
+
+        <ImageButton
+            android:id="@+id/capture"
+            android:src="@drawable/take_picture_yes_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@null"
+            android:layout_marginBottom="25dp"
+            android:onClick="cameraButtonPressed"
+            android:minWidth="40dp"
+            android:minHeight="40dp"
+            android:scaleType="fitXY" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/flashButton"
+            android:src="@drawable/flash_on_button"
+            android:background="@null"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:onClick="flashButtonPressed"
+            android:scaleType="fitXY"
+            android:minWidth="40dp"
+            android:minHeight="40dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/photoActionFrame"
+        android:visibility="gone">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="25dp"
+            android:layout_marginRight="50dp"
+            android:background="@null"
+            android:src="@drawable/retake_picture_button"
+            android:id="@+id/retakePhoto"
+            android:visibility="visible"
+            android:onClick="retakePictureButtonPressed"
+            android:scaleType="fitXY"
+            android:minWidth="40dp"
+            android:minHeight="40dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/usePhoto"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/use_picture_button"
+            android:background="@null"
+            android:visibility="visible"
+            android:onClick="usePictureButtonPressed"
+            android:minHeight="40dp"
+            android:minWidth="40dp"
+            android:scaleType="fitXY" />
+    </FrameLayout>
+
+</RelativeLayout>
