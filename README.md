@@ -11,4 +11,5 @@ UI for android needs touching up, as the i focused less on the UI and more on th
 Server can give out false negatives.
 Accuracy can vary
 Android application camera api can sometimes, camra2 is a fix;
+TCP sending from android is not fully been sent at times, this a server issue not a android application issue;
 
