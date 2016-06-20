@@ -1,0 +1,12 @@
+Image database and SVM have not been added due to file size, any image database can be added though and the SVM can be created using the classes
+
+Find a coin dataset
+
+Seprate the coins into Traing and Test set
+
+Make sure to seperate the coins into differnt vaules from there value e.g. "2p" = foldername "2p" or "£1" = foldername "1pound"
+
+Run buildvocab.cpp first this will build the bag of words model this will take a long time depeding on how many images you use
+
+Then use run server to start the server so the android application can connect to it.
+
